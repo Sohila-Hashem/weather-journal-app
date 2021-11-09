@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Journal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1 id='mainHeader'>Weather Journal App</h1>
+    <div id="note">
+      <p><b>Note:</b> we are extracting Weather data from the <a
+          href="https://home.openweathermap.org/users/sign_in">OpenWeatherMap</a>organization using your apiKey for authorization to the
+        API
+        thus, you need to regestair first there then enter ur API id generated from OpenWeatherMap down below.</p>
+    </div>
+    <div id=idHolder>
+      <input id='userId' type="text" placeholder="enter your API id">
+    </div>
+    <div id="holderCity">
+      <input class=myInput type="text" id="cityName" placeholder="enter a city name here">
+    </div>
+    <div class="holder feel">
+      <h3>How are you feeling today?</h3>
+      <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="4" cols="50"></textarea>
+    </div>
+    <div id=btnContainer>
+      <button id="generate" type="submit"> Generate </button>
+    </div>
+    <div id="title">
+      <h3>Current Tempreature</h3>
+    </div>
+    <div id="holderEntry">
+      <div>
+        <div id="date"></div>
+        <div class="entryHolder" id="minTemp"></div>
+        <div class="entryHolder" id="maxTemp"></div>
+        <div class="entryHolder" id="country"></div>
+        <div class="entryHolder" id="city"></div>
+        <div class="entryHolder" id="content"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
