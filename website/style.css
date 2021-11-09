@@ -8,6 +8,10 @@ body {
     text-align: center;
 }
 
+#note {
+    width: 2em;
+}
+
 #mainHeader {
     font-size: 50px;
 }
