@@ -4,51 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Weather Journal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Orbitron&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel&family=Orbitron&family=Titillium+Web:wght@200&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="app">
-    <h1 id='mainHeader'>Weather Journal App</h1>
-    <div>
-      <p id="note">
-        <b>Note:</b> we are extracting Weather data from the
-        <a href="https://home.openweathermap.org/users/sign_in"><b>OpenWeatherMap.org</b>
-        </a>
-        using your API KEY for authorization to the API thus,
-        first, you need to regestair there using the link above then enter the API KEY received via Mail.
-      </p>
+  <main class="container mb-4">
+
+    <div class="row">
+      <header col-12>
+        <h1 id="mainHeading" class="display-1 text-center">Weather Journal</h1>
+      </header>
     </div>
-    <div id=idHolder>
-      <input id='userId' type="text" placeholder="enter your API id">
+
+    <div class="row g-3">
+
+      <div class="col-sm-6 col-xxl-12">
+        <label for="api" class="form-label">Enter Your APIkey:</label>
+        <input type="text" class="form-control shadow" aria-label="Api key" id="api">
+      </div>
+
+      <div class="col-sm-6 col-xxl-12 mb-5">
+        <label for="city" class="form-label"> Enter A City Name:</label>
+        <input type="text" class="form-control shadow" aria-label="City Name" id="city">
+      </div>
+
     </div>
-    <div id="holderCity">
-      <input class=myInput type="text" id="cityName" placeholder="enter a city name here">
+
+    <div id="btnContainer" class="row justify-content-center mb-4 border-dark border-3 border-bottom">
+      <button id="generate" class="btn col-8 text-white mb-5">Generate</button>
     </div>
-    <div class="holder feel">
-      <h3>How are you feeling today?</h3>
-      <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="4" cols="50"></textarea>
-    </div>
-    <div id=btnContainer>
-      <button id="generate" type="submit"> Generate </button>
-    </div>
-    <div id="title">
-      <h3>Current Tempreature</h3>
-    </div>
-    <div id="holderEntry">
-      <div>
-        <div id="date"></div>
-        <div class="entryHolder" id="minTemp"></div>
-        <div class="entryHolder" id="maxTemp"></div>
-        <div class="entryHolder" id="country"></div>
-        <div class="entryHolder" id="city"></div>
-        <div class="entryHolder" id="content"></div>
+    <div id="weatherData" class="row justify-content-center text-white container mt-5">
+      <div class="row">
+        <h2 class="col-12 text-center py-2">Current Weather</h2>
+      </div>
+      <div class="row">
+        <p class="pb-2" id="date"></p>
+        <p class="pb-2" id="counrty"></p>
+        <p class="pb-2" id="city"></p>
+        <p class="pb-2" id="minTemp"></p>
+        <p id="maxTemp"></p>
       </div>
     </div>
-  </div>
-  <script src="app.js" type="text/javascript"></script>
+  </main>
 
+  <footer class="container-fluid bg-dark bg-gradient text-white position-fixed bottom-0 pb-4 pt-4">
+    <p>&copy;Sohila Samir</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js">
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="app.js" type="text/javascript"></script>
 </body>
 
 </html>

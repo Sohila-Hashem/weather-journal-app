@@ -42,7 +42,6 @@ app.post('/saveWeatherClientData', (req, res) => {
     projectData.country = req.body.country
     projectData.city = req.body.city
     projectData.date = req.body.date
-    projectData.content = req.body.content
     console.log('post saved!')
     //indication to the end of the request
     res.send()
