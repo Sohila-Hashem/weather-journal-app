@@ -44,7 +44,7 @@ div label {
     background-color: rgb(194, 137, 145);
     border-radius: 3em;
     transition: 0.8s ease-out;
-    /*display: none;*/
+    display: none;
 }
 
 
