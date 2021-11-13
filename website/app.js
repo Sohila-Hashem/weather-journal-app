@@ -62,8 +62,8 @@ let getBackAndUpdate = async () => {
     //updating the ui with the data reterived from the server
     document.getElementById('weatherData').style.cssText = 'display: block';
     document.getElementById('date').innerHTML = `<b>Date:</b>${finalDataRetrived.date}`;
-    document.getElementById('minTemp').innerHTML = `<b>Min Temp:</b> ${finalDataRetrived.minTemp}`;
-    document.getElementById('maxTemp').innerHTML = `<b>Max Temp:</b> ${finalDataRetrived.maxTemp}`;
     document.getElementById('country').innerHTML = `<b>Country:</b> ${finalDataRetrived.country}`;
     document.getElementById('city').innerHTML = `<b>City:</b> ${finalDataRetrived.city}`;
+    document.getElementById('minTemp').innerHTML = `<b>Min Temp:</b> ${finalDataRetrived.minTemp}`;
+    document.getElementById('maxTemp').innerHTML = `<b>Max Temp:</b> ${finalDataRetrived.maxTemp}`;
 };

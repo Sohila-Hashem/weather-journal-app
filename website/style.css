@@ -1,9 +1,18 @@
 body {
     font-family: 'Titillium Web', sans-serif;
-    background-image: url(https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80
-);
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/sunset-sky-panorama-scenic-sky-background-hanoh-iki.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 40px 9px 40px 9px;
 }
 
 div input {
@@ -19,21 +28,25 @@ div label {
     font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
     font-size: large;
-    background-color: rgb(171, 137, 194);
+    background-color: rgb(194, 137, 145);
     border-radius: 2em;
     transition: 0.4s linear;
 }
 
 #generate:hover {
-    background-color: rgb(117, 88, 175);
+    background-color: rgb(170, 99, 99);
 }
 
 #weatherData {
-    background-color: rgb(171, 137, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 137, 145);
     border-radius: 3em;
-    transition: 0.5s linear;
-    display: none;
+    transition: 0.8s ease-out;
+    /*display: none;*/
 }
+
 
 footer p {
     font-weight: bold;

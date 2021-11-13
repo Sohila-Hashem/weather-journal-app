@@ -37,11 +37,11 @@ app.get('/getWeatherClientData', (req,res) => {
 //a post route to save the data coming from the client-side to the server
 app.post('/saveWeatherClientData', (req, res) => {
     //the specific data required to post in the client side
-    projectData.maxTemp = req.body.maxTemp
-    projectData.minTemp = req.body.minTemp
+    projectData.date = req.body.date
     projectData.country = req.body.country
     projectData.city = req.body.city
-    projectData.date = req.body.date
+    projectData.minTemp = req.body.minTemp
+    projectData.maxTemp = req.body.maxTemp
     console.log('post saved!')
     //indication to the end of the request
     res.send()
