@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <main class="container p-4 mb-5">
+  <main class="container p-4 mb-5 g-0">
 
     <div class="row">
       <header col-12>
@@ -30,25 +30,29 @@
 
       <div class="col-sm-6 col-xxl-12 mb-5">
         <label for="city" class="form-label"> Enter A City Name:</label>
-        <input type="text" class="form-control shadow" aria-label="City Name" id="city">
+        <input type="text" class="form-control shadow" aria-label="City Name" id="cityInput">
       </div>
 
     </div>
 
-    <div id="btnContainer" class="row justify-content-center mb-4 border-dark border-2 border-bottom">
+    <div id="btnContainer" class="row justify-content-center mb-3 border-dark border-2 border-bottom">
       <button id="generate" class="btn col-8 text-white mb-5">Generate</button>
     </div>
 
     <div id="weatherData" class="row text-white container g-0">
       <div class="row">
-        <h2 class="col-12 text-center py-2">Current Weather</h2>
+        <h2 class="col-12 text-center p-2 g-0">Current Weather</h2>
       </div>
-      <div class="row pb-4 m-0">
-        <p class="pb-2" id="date"></p>
-        <p class="pb-2" id="counrty"></p>
-        <p class="pb-2" id="city"></p>
-        <p class="pb-2" id="minTemp"></p>
+      <div id="weatherElements" class="row pb-2 m-0">
+        <p id="date"></p>
+        <p id="country"></p>
+        <p id="city"></p>
+        <p id="feelsLike"></p>
+        <p id="humidity"></p>
+        <p id="minTemp"></p>
         <p id="maxTemp"></p>
+        <p id="weather"></p>
+        <p id="weatherDet"></p>
       </div>
     </div>
   </main>

@@ -40,8 +40,12 @@ app.post('/saveWeatherClientData', (req, res) => {
     projectData.date = req.body.date
     projectData.country = req.body.country
     projectData.city = req.body.city
-    projectData.minTemp = req.body.minTemp
-    projectData.maxTemp = req.body.maxTemp
+    projectData.humidity = req.body.humidity
+    projectData.feelsLike = req.body.feelsLike
+    projectData.minTemp = req.body.tempMin
+    projectData.maxTemp = req.body.tempMax
+    projectData.weather = req.body.weather
+    projectData.weatherDet = req.body.weatherDet
     console.log('post saved!')
     //indication to the end of the request
     res.send()
