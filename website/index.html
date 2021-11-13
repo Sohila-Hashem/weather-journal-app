@@ -13,7 +13,9 @@
 </head>
 
 <body>
-  <main class="container p-4 mb-5 g-0">
+  <main class="container row d.flex justify-content-around py-3">
+
+  <section class="p-4 mb-5 g-2 col-7">
 
     <div class="row">
       <header col-12>
@@ -21,15 +23,15 @@
       </header>
     </div>
 
-    <div class="row g-3">
+    <div class="row g-3 mb-5">
 
       <div class="col-sm-6 col-xxl-12">
         <label for="api" class="form-label">Enter Your APIkey:</label>
         <input type="text" class="form-control shadow" aria-label="Api key" id="api">
       </div>
 
-      <div class="col-sm-6 col-xxl-12 mb-5">
-        <label for="city" class="form-label"> Enter A City Name:</label>
+      <div class="col-sm-6 col-xxl-12">
+        <label for="city" class="form-label">Enter A City Name:</label>
         <input type="text" class="form-control shadow" aria-label="City Name" id="cityInput">
       </div>
 
@@ -55,8 +57,18 @@
         <p id="weatherDet"></p>
       </div>
     </div>
-  </main>
-
+  </section>
+  <section id="noteContainer" class="col-md-4">
+    <div class="card text-center">
+      <div class="card-header">Note</div>
+      <div class="card-body">
+        <p class="card-text">we are gathering weather information from <a href="https://home.openweathermap.org/users/sign_in" style="color: #fff; text-decoration: none;"><b>openweathermap</b></a>. by using your APIkey for authorization to the API to get the data.<br><br>
+          <small class="blockquote-footer"  style="color: rgb(228, 228, 228);">dont worry we won't steal your APIkey and it's completly protected :)</small>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
   <footer class="container-fluid bg-dark bg-gradient text-white position-fixed bottom-0 pb-4 pt-2 mt-5">
     <p>&copy;Sohila Samir</p>
   </footer>
