@@ -6,6 +6,6 @@ very basic weather API that uses the openWeather API.
 -   Node.js
 -   express
 
-## Running info:
+# Running Info
 -   running locally on port 5050
 -   running publicly on the following [URL](https://weather-journal-app-qelu.onrender.com)
